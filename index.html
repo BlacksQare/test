@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Document</title>
+  <link rel="stylesheet" href="components.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="libs.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
-  <h1>test</h1>
-  <iframe src="http://192.168.0.102/qclocktest" frameborder="0"></iframe>
+  <header>
+    <div id="header-container">
+      <div id="qclock">Qclock</div>
+      <div id="header-items-container">
+        <p>Contact</p>
+        <!-- <div class="separator"></div> -->
+        <p id="notify-me-button">Notify me</p>
+        <!-- <div class="separator"></div> -->
+        <p><a href="/setup">Setup</a></p>
+      </div>
+    </div>
+  </header>
+  <div id="notify-me">
+    <div id="notify-me-container">
+      <h1>Enter Email address</h1>
+      <input type="email" name="" id="email-input" class="text-input" placeholder="email">
+      <div id="enroll-button" class="large-button">Save</div>
+    </div>
+  </div>
+  <img src="imgs/1.png" alt="" srcset="" id="preview">
+  <div id="buy-container">
+    <div id="buy-button" class="large-button">BUY</div>
+    <p id="not-available">Currently not Available for purchase.</p>
+    <!-- <br> -->
+    <p><a href="/setup">Already a Qclock owner? Setup your device here.</a></p>
+  </div>
+  <main>
+    <div id="overview-container">
+      <div class="overview-element left">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi commodi repellendus natus sequi officiis hic maiores molestiae ab repudiandae delectus magni, quia aspernatur in ea dolores, quos quaerat aliquid porro.
+      </div>
+      <div class="overview-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reiciendis iusto consequuntur at hic, dolor iste nulla voluptatibus perspiciatis iure! Inventore quasi maiores earum incidunt. Dignissimos quaerat tempora rem vel.
+      </div>
+      <div class="overview-element left">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo quis debitis earum eius sequi! Labore distinctio praesentium eos nisi necessitatibus, animi cum provident dolorum corrupti, expedita tempore itaque commodi.
+      </div>
+      <div class="overview-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde quisquam laudantium, modi aliquam neque vero eveniet fugit fuga facilis eum sequi optio in hic error nihil, ex enim culpa?
+      </div>
+      <div class="overview-element left">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi sapiente adipisci ipsa nisi quidem ratione quasi assumenda consequatur eius, consectetur exercitationem similique porro autem neque. Ea odio laboriosam officia modi.
+      </div>
+    </div>
+    <!-- <div id="carousel-mask"></div> -->
+    <div id="specification">
+      <table>
+        <tr>
+          <th colspan="2">Specifications</th>
+        </tr>
+        <tr>
+          <td>Dimensions</td>
+          <td>123 x 123 x 123</td>
+        </tr>
+        <tr>
+          <td>Screen Resolution</td>
+          <td>64 x 32</td>
+        </tr>
+        <tr>
+          <td>Sceen Colors</td>
+          <td>123123123</td>
+        </tr>
+        <tr>
+          <td>Power connector</td>
+          <td>USB-C</td>
+        </tr>
+        <tr>
+          <td>Connectifity</td>
+          <td>WiFi 2.4GHz</td>
+        </tr>
+      </table>
+    </div>
+  </main>
 </body>
 </html>

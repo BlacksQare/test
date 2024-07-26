@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Document</title>
+  <script src="../libs.js"></script>
+  <script src="config/config.js"></script>
+  <script src="setup.js"></script>
+  <!-- <link rel="stylesheet" href="config/config.css"> -->
+  <link rel="stylesheet" href="../components.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="setup.css">
+</head>
+<body>
+
+  
+  
+  <div id="future-container">
+    <div class="device-list-item" id="pre-device-list-item">
+      <div class="placeholder-image"></div>
+      <p class="qclock-id"></p>
+      <div class="connect-button small-button">Connect</div>
+    </div>
+
+    <div id="code-container">      
+      <div id="code-input-container">
+        <input type="text" class="code-input" maxlength="2">
+        <input type="text" class="code-input" maxlength="2">
+        <input type="text" class="code-input" maxlength="2">
+        <input type="text" class="code-input" maxlength="2">
+      </div>
+      <div id="enter-config-button">Konfiguracja</div>
+      <p id="hostname"></p>
+    </div>
+
+    <div id="pre-step-1">
+      <p>step 1</p>
+      <div id="coscos"></div>
+      <h1>Select configuration method:</h1>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      coscos
+    </div>
+
+    <div id="pre-step-2">
+      <p>step 2</p>
+    </div>
+  </div>
+
+  <header>
+    <div id="header-container">
+      <div id="qclock">Qclock</div>
+      <div id="header-items-container">
+        <p id="back-step" class="small-button">Back</p>
+      </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="step-container"></div>
+  </main>
+  <div id="device-search">
+    <div id="hide-arrow-container">
+      <svg id="hide-arrow-element" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z" fill=""/>
+      </svg>
+    </div>
+    <p id="searching-label">Searching for Devices<span id="searching-animation"></span></p>
+    <div id="device-list-container"></div>
+  </div>
+</body>
+</html>

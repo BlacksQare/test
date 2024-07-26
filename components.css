@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Pixelcaps;
+  src: url(fonts/PixelCaps.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '5x5dots';
+  src: url(fonts/5x5dots.woff2) format('woff2'),
+       url(fonts/5x5dots.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root{
+  --color-gray: rgba(255,255,255,0.1);
+  --color-off: rgb(127,127,127);
+  --color-green: #ABE188;
+  --color-red: #EA526F;
+  --border-focus-color: rgba(255,255,255,0.2);
+  --menu-background: rgb(22, 22, 22);
+  --blur: blur(40px);
+  --border-radius: 15px;
+  --header-color: rgba(255,255,255,0.05);
+  --border-off-color: var(--color-gray);
+  --border-state: var(--border-off-color);
+  --alternate-font: "5x5dots";
+  --border: 1px solid var(--color-gray);
+}
+
+.text-input{
+  width: calc(100% - 40px);
+  height: fit-content;
+  padding: 10px;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: large;
+  text-align: center;
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  outline: none;
+  color: white;
+}
+
+.text-input:focus{
+  outline: none;
+}
+
+.large-button, .medium-button, .small-button{
+  font-family: "5x5dots";
+  background-color: var(--menu-background);
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-align: center;
+  border: var(--border);
+}
+
+.large-button{
+  width: 120px;
+  padding: 23px;
+  font-size: 20px;
+}
+
+.medium-button{
+  /* width: 90px; */
+  padding: 15px;
+  font-size: 15px;
+}
+
+.small-button{
+  font-family: sans-serif;
+  /* width: 60px; */
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* padding-top: 0.6vh; */
+  font-size: 12px;
+}
+
+.large-button:active, .medium-button:active, .small-button:active{
+  opacity: 0.5;
+  border: 1px solid transparent;
+  /* box-shadow: 0px 0px 10px 10px black inset; */
+}
+
+
+.separator{
+  float: left;
+  height: 100%;
+  /* margin-top: 5%; */
+  width: 2px;
+  background-color: var(--header-color);
+  border-radius: 1000px;
+}
